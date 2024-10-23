@@ -6,17 +6,17 @@ const RecentWorks = () => {
   const projects = [
     {
       title: "Real Estate",
-      imageUrl: "./three.png", // Replace with the actual image path
+      imageUrl: "/three.png", // Replace with the actual image path
       link: "https://realtor-eight-mu.vercel.app"
     },
     {
       title: "First-Portfolio",
-      imageUrl: "./one.png", // Replace with the actual image path
+      imageUrl: "/one.png", // Replace with the actual image path
       link: "https://portfolio-six-zeta-48.vercel.app/"
     },
     {
       title: "First To-Do App",
-      imageUrl: "./two.png", // Replace with the actual image path
+      imageUrl: "/two.png", // Replace with the actual image path
       link: "https://final1-tau.vercel.app"
     }
   ];

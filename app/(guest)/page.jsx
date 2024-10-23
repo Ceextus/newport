@@ -1,23 +1,15 @@
 "use client";
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import Typewriter from 'react-typewriter-effect';
 import Contact from '../componets/Contact';
 import Recent from '../componets/Recent';
 
 const HomePage = () => {
-  const [isClient, setIsClient] = useState(false);
-
-  useEffect(() => {
-    // Set to true to confirm the component is mounted on the client-side
-    setIsClient(true);
-  }, []);
-
+  
   const handleResumeDownload = () => {
-    const resumeUrl = './sixtus-Resume.pdf'; 
-    if (typeof window !== 'undefined') {
-      window.open(resumeUrl, '_blank');
-    }
+    const resumeUrl = '/sixtus-Resume.pdf'; 
+    window.open(resumeUrl, '_blank');
   };
 
   return (

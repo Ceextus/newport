@@ -12,7 +12,7 @@ const NavBar = () => {
   }, []);
 
   const handleResumeDownload = () => {
-    const resumeUrl = './sixtus-Resume.pdf'; // Replace with your resume URL
+    const resumeUrl = '/sixtus-Resume.pdf'; // Replace with your resume URL
     if (typeof window !== 'undefined') {
       window.open(resumeUrl, '_blank');
     }
