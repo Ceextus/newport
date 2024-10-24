@@ -1,11 +1,12 @@
 "use client";
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
+import { Typed } from 'react-typed';
 import Contact from '../componets/Contact';
 import Recent from '../componets/Recent';
 
 const HomePage = () => {
-  
+
   const handleResumeDownload = () => {
     const resumeUrl = '/sixtus-Resume.pdf'; 
     window.open(resumeUrl, '_blank');
@@ -17,8 +18,9 @@ const HomePage = () => {
       <motion.div
         id="landing"
         className="flex flex-col items-start justify-center min-h-screen text-left bg-teal-100 px-4 max-md:ml-0 md:px-8"
-        initial={{ opacity: 1 }}
-        animate={{ opacity: 1 }}
+        initial={{ x: '-100vw', opacity: 0 }}   // Start off-screen to the left
+        animate={{ x: 0, opacity: 1 }}         // Slide in to its original position
+        transition={{ type: 'spring', stiffness: 60, damping: 20 }}  // Control speed and smoothness
       >
         <h1 className="text-4xl md:text-5xl font-bold">
           Hey, I'm Sixtus Ojochegbe Joseph
