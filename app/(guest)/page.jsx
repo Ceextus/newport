@@ -1,12 +1,10 @@
 "use client";
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { Typed } from 'react-typed';
 import Contact from '../componets/Contact';
 import Recent from '../componets/Recent';
 
 const HomePage = () => {
-
   const handleResumeDownload = () => {
     const resumeUrl = '/sixtus-Resume.pdf'; 
     window.open(resumeUrl, '_blank');
@@ -18,19 +16,19 @@ const HomePage = () => {
       <motion.div
         id="landing"
         className="flex flex-col items-start justify-center min-h-screen text-left bg-teal-100 px-4 max-md:ml-0 md:px-8"
-        initial={{ x: '-100vw', opacity: 0 }}   // Start off-screen to the left
-        animate={{ x: 0, opacity: 1 }}         // Slide in to its original position
-        transition={{ type: 'spring', stiffness: 60, damping: 20 }}  // Control speed and smoothness
+        initial={{ x: '-100vw', opacity: 0 }} // Start off-screen to the left
+        animate={{ x: 0, opacity: 1 }} // Slide in to its original position
+        transition={{ type: 'spring', stiffness: 60, damping: 20 }} // Control speed and smoothness
       >
         <h1 className="text-4xl md:text-5xl font-bold">
-          Hey, I'm Sixtus Ojochegbe Joseph
+          Hey, I'm Sixtus <span className='text-teal-600'>Ojochegbe</span> Joseph
         </h1>
         <p className="mt-4 text-lg md:text-xl text-gray-700 max-w-xl">
           I'm a frontend developer dedicated to crafting visually stunning websites that deliver exceptional user experiences.
         </p>
         <button
           onClick={handleResumeDownload}
-          className="mt-6 bg-teal-600 text-white px-6 py-2 rounded hover:bg-teal-700 transition"
+          className="mt-6 bg-teal-600 text-white font-bold px-6 py-2 rounded hover:bg-teal-700 transition"
         >
           Download Resume
         </button>
@@ -61,6 +59,7 @@ const HomePage = () => {
   );
 };
 
+// AnimatedSection Component
 const AnimatedSection = ({ id, initialDirection, children }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });

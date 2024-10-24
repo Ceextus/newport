@@ -15,8 +15,8 @@ const ContactMe = () => {
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <h2 className="text-3xl font-bold text-white text-center">Get in Touch</h2>
         <p className="text-white text-lg text-center mt-4 max-w-xl mx-auto">
-          Open to opportunities to learn, grow as a developer, and add value to your business/product. 
-          You can reach out to me via email or through the other links in the footer. 
+          Open to opportunities to learn, grow as a developer, and add value to your business/product.
+          You can reach out to me via email or through the other links in the footer.
           I will get back to you as soon as possible.
         </p>
 
@@ -42,16 +42,16 @@ const ContactMe = () => {
               </button>
               <h3 className="text-xl font-semibold mb-4">Connect with Me</h3>
               <div className="flex justify-around items-center">
-                <Link href="mailto:your-email@gmail.com" passHref>
+                <Link href="mailto:sixtusjoseph3@gmail.com" passHref>
                   <FaEnvelope className="text-teal-600 hover:text-teal-800 text-4xl" />
                 </Link>
-                <Link href="https://wa.me/your-whatsapp-number" passHref>
+                <Link href="https://wa.me/2348141921552" passHref>
                   <FaWhatsapp className="text-teal-600 hover:text-teal-800 text-4xl" />
                 </Link>
-                <Link href="https://linkedin.com/in/your-linkedin" passHref>
+                <Link href="https://www.linkedin.com/in/sixtus-ojochegbe-joseph-5877262b6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" passHref>
                   <FaLinkedin className="text-teal-600 hover:text-teal-800 text-4xl" />
                 </Link>
-                <Link href="https://github.com/your-github" passHref>
+                <Link href="https://github.com/Ceextus" passHref>
                   <FaGithub className="text-teal-600 hover:text-teal-800 text-4xl" />
                 </Link>
               </div>
