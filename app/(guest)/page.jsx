@@ -1,7 +1,6 @@
 "use client";
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import Typewriter from 'react-typewriter-effect';
 import Contact from '../componets/Contact';
 import Recent from '../componets/Recent';
 
@@ -22,18 +21,10 @@ const HomePage = () => {
         animate={{ opacity: 1 }}
       >
         <h1 className="text-4xl md:text-5xl font-bold">
-          <Typewriter
-            text="Hey, I'm Sixtus Ojochegbe Joseph"
-            typeSpeed={100}
-            cursorColor="#000"
-          />
+          Hey, I'm Sixtus Ojochegbe Joseph
         </h1>
         <p className="mt-4 text-lg md:text-xl text-gray-700 max-w-xl">
-          <Typewriter
-            text="I'm a frontend developer dedicated to crafting visually stunning websites that deliver exceptional user experiences."
-            typeSpeed={50}
-            cursorColor="#000"
-          />
+          I'm a frontend developer dedicated to crafting visually stunning websites that deliver exceptional user experiences.
         </p>
         <button
           onClick={handleResumeDownload}
